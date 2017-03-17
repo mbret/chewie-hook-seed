@@ -25,10 +25,11 @@ class MyHook {
      *                 helper.logger is not really meant to be used as debug tool (although you can), you can use debug() for that.
      *                 The logs will be displayed to user depending of its config (info, verbose, warning, error)
      */
-    constructor(chewie, userConfig, helper) {
+    constructor(chewie, userConfig, helper, userOptions) {
         this.chewie = chewie;
         this.config = _.merge(localConfig, userConfig);
         this.helper = helper;
+        this.userOptions = userOptions;
     }
 
     /**
