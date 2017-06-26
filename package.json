@@ -23,7 +23,8 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "cross-env": "^3.1.4",
-    "chewie-system": "https://github.com/mbret/chewie-system"
+    "cross-env": "^5.0.1",
+    "chewie-system": "https://github.com/mbret/chewie-system.git",
+    "chewie-cli": "git+https://github.com/mbret/chewie-cli.git"
   }
 }

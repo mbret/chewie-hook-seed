@@ -7,15 +7,4 @@ process.chdir(__dirname);
 const chewie = require("chewie-system");
 
 // Start the system
-chewie.start({
-    settings: {
-        "system": {
-            "tmpDir": "./.chewie/.tmp",
-            "appDataPath": "./.chewie"
-        },
-        "hooks": {
-            // Here you enable your hook and provide the direct path so Chewie is able to load it.
-            "chewie-hook-seed": { modulePath: __dirname + "/.." },
-        }
-    }
-});
+chewie.start();
